@@ -8,7 +8,37 @@ main{
     max-width: 1000px;
     display: grid;
     border-radius: 10px;
+    grid-template-areas: "h h h h h h h"
+                         "n n n n n n n"
+                         "a a a a as as as"
+                         "f f f f f f f";
 }
+
+header
+{
+    grid-area: h;
+}
+
+nav
+{
+    grid-area: n;
+}
+
+article
+{
+    grid-area: a;
+}
+
+aside
+{
+    grid-area: as;
+}
+
+footer
+{
+    grid-area: f;
+}
+
 
 footer{
     color: white;
