@@ -12,6 +12,7 @@ main{
                          "n n n n n n n"
                          "a a a a as as as"
                          "f f f f f f f";
+    grid-template-columns: repeat(7, 1fr);
 }
 
 header
@@ -29,18 +30,18 @@ article
     grid-area: a;
 }
 
+article img
+{
+    width: 100%;
+}
+
 aside
 {
     grid-area: as;
 }
 
-footer
-{
-    grid-area: f;
-}
-
-
 footer{
+    grid-area: f;
     color: white;
     background-color: #003049;
     text-align: center;
