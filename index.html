@@ -4,48 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="progikstilus.css">
+    <link rel="stylesheet" href="form.css">
+    <script src="script.js"></script>
     <title>Programok</title>
 </head>
 <body>
     <main>
-        <header>Programok</header>
-        <nav></nav>
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html"><h1>Programok</h1></a>
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Jelentkezés</a></li>
+                    <li><a href="#">Programok</a></li>
+                    <li><a href="#">Fizetés</a></li>
+                    <li><a href="#">Galéria</a></li>
+                </ul>
+            </nav>
+        </header>
         <article>
-            <div>
+            
+            <div class="maindiv">
                 <div>
-                    <img src="kepek/las_vegas.jpg" alt="Las Vegas">
+                    <h2>Helyszín</h2>
                 </div>
                 <div>
-                    
+                    <img src="kepek/las_vegas.jpg" alt="Helyszín">
                 </div>
-            </div>
-            <div>
-                <div>
-                    <img src="kepek/Paris.jpg" alt="Párizs">
-                </div>
-                <div>
-
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="kepek/copacabana.jpg" alt="Copacabana">
+                <div class="form">
+                    <form action="">
+                        <legend>Melyik városba legyen a Farsangi buli?</legend>
+                        <input type="radio" id="paris" type="a" name="radiob" value="Paris">Paris<br>
+                        <input type="radio" id="las_vegas" type="" name="radiob" value="Las Vegas">Las Vegas<br>
+                        <input type="radio" id="dublin" type="" name="radiob" value="Dublin">Dublin
+                    </form>
+                    <button onclick="writeh()" type="button" class="gomb">Mehet</button>
                 </div>
                 <div>
-
+                    <p id="varoski">Válaszd ki.</p>
                 </div>
             </div>
-            <div>
+            <div class="maindiv">
                 <div>
-                    <img src="kepek/dublin.jpg" alt="Dublin">
+                    <h2>Beltér/Kültér</h2>
                 </div>
                 <div>
-
+                    <img src="kepek/park.jpg" alt="">
+                </div>
+                <div class="form">
+                    <form action="">
+                        <legend>Kültéri vagy Beltéri buli legyen?</legend>
+                        <input type="radio" id="kulter" type="" name="radiobk" value="Kültéri">Kültéri<br>
+                        <input type="radio" id="belter" type="" name="radiobk" value="Beltéri">Beltéri
+                    </form>
+                    <button onclick="writekb()" class="gomb">Mehet</button>
+                </div>
+                <div>
+                    <p id="helyzinki">Válaszd ki.</p>
+                </div>
+            </div>
+            <div class="maindiv">
+                <div>
+                    <h2>Időpont</h2>
+                </div>
+                <div>
+                    <img src="kepek/dublin.jpg" alt="">
+                </div>
+                <div class="form">
+                    <form action="">
+                        <legend>Melyik időpontba legyen a buli?</legend>
+                        <input type="radio" id="1012" type="" name="radiobt" value="10 órától 12 óráig">10-12 óra<br>
+                        <input type="radio" id="1214" type="" name="radiobt" value="12 órától 14 óráig">12-14 óra<br>
+                        <input type="radio" id="1416" type="" name="radiobt" value="14 órától 16 óráig">14-16 óra<br>
+                        <input type="radio" id="1618" type="" name="radiobt" value="16 órától 18 óráig">16-18 óra
+                    </form>
+                    <button onclick="writei()" class="gomb">Mehet</button>
+                </div>
+                <div>
+                    <p id="idopontki">Válaszd ki.</p>
                 </div>
             </div>
         </article>
-        <aside></aside>
-        <footer>@ Kata & Zalán</footer>
+        <footer>@ Kata & Peti & Zalán</footer>
     </main>
 </body>
 </html>

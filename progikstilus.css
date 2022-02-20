@@ -8,16 +8,23 @@ main{
     max-width: 1000px;
     display: grid;
     border-radius: 10px;
-    grid-template-areas: "h h h h h h h"
-                         "n n n n n n n"
-                         "a a a a as as as"
-                         "f f f f f f f";
+    grid-template-areas: "h h h h"
+                         "n n n n"
+                         "a a a a"
+                         "f f f f";
+    /* 
+    ezt nem értem mi a f*** kellett ide.
     grid-template-columns: repeat(7, 1fr);
+    */  
 }
 
 header
 {
     grid-area: h;
+    background-color: rgb(176, 137, 104);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
 }
 
 nav
@@ -28,23 +35,80 @@ nav
 article
 {
     grid-area: a;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 article img
 {
     width: 100%;
-}
-
-aside
-{
-    grid-area: as;
+    height: 100%;
 }
 
 footer{
     grid-area: f;
     color: white;
-    background-color: #003049;
+    background-color: #584434;
     text-align: center;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    color: rgb(230, 204, 178);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+  }
+  .navbar ul li {
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  .navbar ul li a {
+    text-decoration: none;
+    color: rgb(230, 204, 178);
+    padding: 8px 25px;
+    transition: all 0.5s ease;
+  }
+  .navbar ul li a:hover {
+    background-color: rgb(230, 204, 178);
+    color: rgb(156, 102, 68);
+    box-shadow: 0 0 10px rgb(230, 204, 178);
+  }
+  .logo a {
+    text-decoration: none;
+    color: rgb(230, 204, 178);
+  }
+  
+  header h1 {
+    letter-spacing: 8px;
+    text-transform: uppercase;
+  }
+
+.maindiv{
+    margin: 5px;
+}
+
+div{
+    /*border: 1px solid black;*/
+}
+
+h2{
+    text-align: center;
+    margin: 5px;
+}
+
+.form{
+    height: 110px;
 }
